@@ -1,0 +1,25 @@
+{
+  "name": "node-js-mongodb-books-db",
+  "version": "1.0.0",
+  "description": "Node Js Task, Display books from mongo Database.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BartovElisha/NODE-JS-MongoDb-Books-Db.git"
+  },
+  "author": "Elisha B.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BartovElisha/NODE-JS-MongoDb-Books-Db/issues"
+  },
+  "homepage": "https://github.com/BartovElisha/NODE-JS-MongoDb-Books-Db#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "joe": "^2.0.2",
+    "mongoose": "^6.5.0"
+  }
+}
