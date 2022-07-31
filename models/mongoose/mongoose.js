@@ -1,36 +1,17 @@
 const mongoose = require('mongoose');
-const booksDb = require('./bookSchema');
 
+// Importing the chalk module
+const chalk = require('chalk');
 
 try {
     mongoose.connect('mongodb://localhost:27017/books');
-    console.log('Connected to Mongodb Server, Collection Books...');
-
-    //DisplayNumOfBooksInLib();
+    console.log(chalk.yellow('Connected to Mongodb Server, Collection Books...'));
 } 
 catch (error) {
     console.log("Error: "+error);
 }
 finally {
-    console.log("Successfully !!!");
+    console.log(chalk.yellow("Successfully !!!"));
 }
-
-// CRUD operations
-// Create
-
-// Read
-async function DisplayNumOfBooksInLib() {
-    result = await booksDb.find({});
-
-    console.log("Number of Books in Library is: "+result.length);
-
-    return result.length;
-}
-
-DisplayNumOfBooksInLib();
-
-// Update
-
-// Delete
 
 module.exports = mongoose;
